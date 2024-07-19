@@ -1,15 +1,8 @@
 import random
-
 chars = "abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()"
-while True:
-    try:
-        length = int(input("Enter length: "))
-        break
-    except ValueError:
-        print("Please enter a valid integer.")
-password = ""
+length=int(input("enter length: "))
+password=""
 
-for _ in range(length):
-    password += random.choice(chars)
-
+for a in range(length):
+    password+=random.choice(chars)
 print(password)
